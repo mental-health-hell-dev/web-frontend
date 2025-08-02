@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fredoka, Geist, Geist_Mono } from "next/font/google";
+import { Header } from "./_shared/ui";
 import "./globals.css";
-import { Header } from "./shared";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
