@@ -1,9 +1,31 @@
-import { Header } from "./modules";
+import { Button } from "./shared/ui/button";
 
 export default function Home() {
-    return (
-        <div className="font-fredoka-sans grid grid-rows-[50px_1fr_20px] items-center justify-items-center min-h-screen pt-12 px-4 pb-20 gap-16 sm:px-12 sm:py-6 text-[#4B2C5E]">
-            <Header />
-        </div>
-    );
+	return (
+		<section className="text-2xl flex items-center flex-col gap-4 text-center ">
+			<p>
+				It`s okay. Just breathe. <br /> I`m here with you.
+			</p>
+			<h1 className="text-4xl font-bold">AI Therapist</h1>
+			<p>
+				Let every day be <br />a little lighter
+			</p>
+			<div className="flex items-center gap-2 mt-2">
+				<Button
+					variant="secondary"
+					size="lg"
+					className="text-xl"
+				>
+					Start
+				</Button>
+				<Button
+					variant="default"
+					size="lg"
+					className="text-xl"
+				>
+					About
+				</Button>
+			</div>
+		</section>
+	);
 }
